@@ -9,8 +9,8 @@ int main(void)
 		if (i + 1 != 10)
 		{
 			putchar(',');
+			putchar(' ');
 		}
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
