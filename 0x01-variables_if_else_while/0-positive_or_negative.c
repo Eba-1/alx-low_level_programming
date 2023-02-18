@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
-/* The main function accepts a number and checks if it is negative or not. */
+/** main - negative or positive 
+ * Return - Always return
+ */
 int main(void)
 {
 	int n;
