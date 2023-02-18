@@ -3,9 +3,9 @@ int main(void)
 {
 	int i;
 	char ch = 'a';
-	for(i = 0; i < 26; i++)
+	for(i = 0; i < 24; i++)
 	{
-		if(i == 5 || i == 15)
+		if(i == 4 || i == 15)
 		{
 			ch++;
 		}
