@@ -10,7 +10,7 @@ int main(void)
 	}
 	for (i = 0; i < 6; i++)
 	{
-		putchar('ch');
+		putchar(ch);
 		ch++;	
 	}
 	putchar('\n');
