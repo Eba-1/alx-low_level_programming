@@ -3,7 +3,7 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
-/* this is the main function of the program. It accepts a number and checks whether it is negative or not. */
+/* The main function accepts a number and checks if it is negative or not. */
 int main(void)
 {
 	int n;
