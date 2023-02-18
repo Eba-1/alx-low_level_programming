@@ -3,12 +3,15 @@
 int main(void)
 {
 	int i;
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 10; i++)
 	{
 		putchar(i + '0');
-		putchar(',');
+		if (i + 1 != 10)
+		{
+			putchar(',');
+		}
 		putchar(' ');
 	}
-	putchar(9 + '0');
+	putchar('\n');
 	return (0);
 }
