@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 	char ch1 = 'a', ch2 = 'A';
-	
+
 	for (i = 0; i < 26; i++)
 	{
 		putchar(ch1);
