@@ -1,14 +1,20 @@
 #include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int i;
 	char ch1 = 'a', ch2 = 'A';
-	for(i = 0; i < 26; i++)
+	
+	for (i = 0; i < 26; i++)
 	{
 		putchar(ch1);
 		ch1++;
 	}
-	for(i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(ch2);
 		ch2++;
