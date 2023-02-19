@@ -2,10 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - negative or positive
+ * main - Entry point
  *
- * Return - Always return
+ * Return - Always 0 (success)
  */
+
 int main(void)
 {
 	int n;
