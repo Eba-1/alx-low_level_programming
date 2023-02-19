@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** main - negative or positive 
+/**
+ * main - negative or positive
+ *
  * Return - Always return
  */
 int main(void)
