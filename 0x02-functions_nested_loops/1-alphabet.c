@@ -1,4 +1,4 @@
-#include<main.h>
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -9,6 +9,6 @@ void print_alphabet()
 	char ch;
 	for (ch = 'a'; ch <= 'z'; c++)
 	{
-		printf("%c", ch);
+		_putchar("%c", ch);
 	}
 }
