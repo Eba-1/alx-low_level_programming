@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * print_sign - return the sign of the number
  *
