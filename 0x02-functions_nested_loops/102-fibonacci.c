@@ -6,16 +6,17 @@
  */
 int main(void)
 {
-	int i, f1 = 1, f2 = 2, f3;
+	int i;
+	long f1 = 1, f2 = 2, f3;
 
-	printf("%d, %d, ", f1, f2);
+	printf("%li, %li, ", f1, f2);
 	for (i = 0; i < 46; i++)
 	{
 		f3 = f1 + f2;
 		f1 = f2;
 		f2 = f3;
-		printf("%d ,", f3);
+		printf("%li, ", f3);
 	}
-	printf("%d\n", f1 + f3);
+	printf("%li\n", f1 + f3);
 	return (0);
 }
