@@ -10,7 +10,7 @@ int main(void)
 	long f1 = 1, f2 = 2, f3;
 
 	printf("%li, %li, ", f1, f2);
-	for (i = 0; i < 46; i++)
+	for (i = 0; i < 47; i++)
 	{
 		f3 = f1 + f2;
 		f1 = f2;
