@@ -18,6 +18,6 @@ int main(void)
 			sum += f3;
 		}
 	}
-	printf("%d\n", sum);
+	printf("%li\n", sum);
 	return (0);
 }
