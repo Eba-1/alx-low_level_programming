@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * puts - print every other character
+ * puts2 - print every other character
  * @str: a string reference as a parameter
  * Return nothing
  */
 
-void puts(char *str)
+void puts2(char *str)
 {
 	int len = 0;
 
