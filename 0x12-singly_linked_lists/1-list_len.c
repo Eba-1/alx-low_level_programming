@@ -2,6 +2,7 @@
 
 /*
  * list_len - A function to find the length of a linked list.
+ * list_t list
  * @h: Parameter (the head of the linked  list)
  * Return: Return the number of elements.
  */
