@@ -1,5 +1,6 @@
 #include "lists.h"
-/*
+
+/**
  * add_node - Adds a node to the beginning of a list.
  * @head: Parameter (the head of the list)
  * @str: Parameter (the value for the node)
