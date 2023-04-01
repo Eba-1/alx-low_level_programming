@@ -11,6 +11,7 @@
  *
  * Return: Address of the new node.
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *current, *newNode;
@@ -21,8 +22,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return(NULL);
 	}
+
 	newNode->str = strdup(str);
-	for (n = 0; str[n]; n++);
+
+	for (n = 0; str[n]; n++)
+		;
 
 	newNode->len = n;
 	newNode->next = NULL;
@@ -37,6 +41,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		current = current->next;
 	}
+
 	current->next = newNode;
 
 	return(*head);
