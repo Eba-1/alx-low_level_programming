@@ -2,11 +2,10 @@
 
 /*
  * list_len - A function to find the length of a linked list.
- *
  * @h: Parameter (the head of the linked  list)
- *
  * Return: Return the number of elements.
  */
+
 size_t list_len(const list_t *h)
 {
 	size_t count = 0;
