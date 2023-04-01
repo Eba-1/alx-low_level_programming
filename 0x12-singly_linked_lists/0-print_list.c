@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /*
- * print_list - a function that prints all the elements of a list.
+ * print_list - Function that prints elements of a list.
  * 
  * @h: A parameter (the head of the linked list)
  * 
@@ -10,7 +10,8 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	size_t count;
+	count = 0;
 
 	while (h != NULL)
 	{
