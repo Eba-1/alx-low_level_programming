@@ -1,9 +1,6 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
-/*
+/**
  * add_node_end - Adding a node at the beginning of the list.
  *
  * @head: Parameter (the head opf the list)
