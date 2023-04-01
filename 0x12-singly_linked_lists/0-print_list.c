@@ -1,13 +1,11 @@
 #include "lists.h"
 #include <stdio.h>
-
 /*
  * print_list - Function that prints elements of a list.
- * 
  * @h: A parameter (the head of the linked list)
- * 
  * Return: The number of elements in the list
  */
+
 size_t print_list(const list_t *h)
 {
 	size_t count;
