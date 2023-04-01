@@ -2,10 +2,8 @@
 
 /**
  * add_node_end - Adding a node at the beginning of the list.
- *
  * @head: Parameter (the head opf the list)
  * @str: The value that the node will have.
- *
  * Return: Address of the new node.
  */
 
