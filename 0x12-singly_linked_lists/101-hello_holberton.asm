@@ -2,9 +2,9 @@ section .data
     str: db "Hello, Holberton", 10
     strLen: equ $-str
 section .text
-    global _start
+    global main
     
-    _start:
+    main:
         mov rax,1
         mov rdi,1
         mov rsi,str
