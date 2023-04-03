@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * first - Function that will be executed before the main function
+ * first - Function that will be executed
+ * before the main function
  * Return: Void function with no returns
  */
 
