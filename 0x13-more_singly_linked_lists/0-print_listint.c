@@ -20,5 +20,6 @@ size_t print_listint(const listint_t *h)
 		current = current->next;
 		size++;
 	}
+	
 	return (size);
 }
