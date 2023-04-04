@@ -3,7 +3,9 @@
 /**
  * print_listint - Function that prints all the
  * elements of a listint_t list.
+ *
  * @h: Parameter (the head of the list).
+ *
  * Return: Returns the number of nodes.
  */
 
