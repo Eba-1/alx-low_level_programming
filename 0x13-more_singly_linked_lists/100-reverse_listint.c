@@ -2,9 +2,9 @@
 
 /**
  * reverse_listint - Function that reverses a list
- * @head: Parameter (the head of the list)
+ * head: Parameter (the head of the list)
+ * Return: pointer to the first node.
  */
- 
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *previous;
@@ -16,8 +16,8 @@ listint_t *reverse_listint(listint_t **head)
 	while (*head != NULL)
 	{
 		next_node = (*head)->next;
-		(*head)->next = previous;
-		previous = *head;
+		(*head)->next = p;
+		p = *head;
 		*head = next_node;
 	}
 
