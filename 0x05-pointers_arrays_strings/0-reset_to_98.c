@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
-* reset_to_98 - the function resets the value of an integer to 98
-* @n: parameter
-* Return: return nothing
+* reset_to_98 - Function to change the value of an integer to 98
+* @var: Parameter (the value to change the value)
+* Return: Void functions don't return
 */
-
-void reset_to_98(int *n)
+void reset_to_98(int *var)
 {
-	*n = 98;
+	*var = 98;
 }
