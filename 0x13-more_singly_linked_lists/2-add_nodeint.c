@@ -7,12 +7,12 @@
  * Return: Address of the new node.
  */
 
-list_t *add_nodeint(list_t **head, const int *n)
+listint_t *add_nodeint(list_t **head, const int *n)
 {
 	list_t *newNode;
 	int i;
 
-	newNode = malloc(sizeof(list_t));
+	newNode = malloc(sizeof(listint_t));
 	if (newNode == NULL)
 		return (NULL);
 
