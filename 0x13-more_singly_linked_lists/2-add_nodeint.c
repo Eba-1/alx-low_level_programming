@@ -10,7 +10,7 @@
 list_t *add_nodeint(list_t **head, const int *n)
 {
 	list_t *newNode;
-	size_t n;
+	int i;
 
 	newNode = malloc(sizeof(list_t));
 	if (newNode == NULL)
@@ -18,7 +18,7 @@ list_t *add_nodeint(list_t **head, const int *n)
 
 	newNode->n = strdup(n);
 
-	for (n = 0; str[n]; n++)
+	for (i = 0; n[i]; i++)
 		;
 
 	newNode->len = n;
