@@ -22,11 +22,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(current);
 		return (1);
 	}
-	for (i = 1; i < index; i++)
+	for (i = 1; i < index - 1; i++)
 	{
 		if (current->next == NULL)
 		{
-			return (0);
+			return (-1);
 		}
 		current = current->next;
 	}
