@@ -1,7 +1,4 @@
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
-
 /**
  * listint_len - Function that returns the number of
  * elements of a listint_t list.
@@ -10,7 +7,6 @@
  *
  * Return: Returns the number of nodes.
  */
-
 size_t listint_len(const listint_t *h)
 {
         size_t size = 0;
@@ -21,5 +17,6 @@ size_t listint_len(const listint_t *h)
                 current = current->next;
                 size++;
         }
+        
         return (size);
 }
