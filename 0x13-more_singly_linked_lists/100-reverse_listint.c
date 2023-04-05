@@ -2,7 +2,7 @@
 
 /**
  * reverse_listint - Function that reverses a list.
- * @head: Parameter (the head of a list).
+ * @head: Parameter.
  *
  * Return: Pointer to the first node.
  */
