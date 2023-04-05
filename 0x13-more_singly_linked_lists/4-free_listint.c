@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * free_listint - frees a linked list
- * @head: head of the list
+ * free_listint - Function that frees a linked list
+ * @head: Parameter (head of the list)
  *
- * Return: void
+ * Return: Nothing
  */
 void free_listint(listint_t *head)
 {
