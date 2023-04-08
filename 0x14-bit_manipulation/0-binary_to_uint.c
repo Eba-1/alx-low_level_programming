@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * binary_to_uint - Function that converts binary to decimal.
@@ -10,6 +9,10 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i = 0, number = 0, count = 0;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
 	while (*(b + i) != '\0')
 	{
 		count++;
