@@ -23,9 +23,9 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-			if (*(b + i) == '1')
+			if (*(b + i - 1) == '1')
 			{
-				number += pow(2, count - i - 1);
+				number += 1 << (count - i);
 			}
 		}
 	}
