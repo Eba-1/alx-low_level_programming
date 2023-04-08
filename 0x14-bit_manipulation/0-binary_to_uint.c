@@ -18,18 +18,15 @@ unsigned int binary_to_uint(const char *b)
 		count++;
 		i++;
 	}
-	for (i = count - 1; i >=0; i--)
+	for (i = count; i >=0; i--)
 	{
-		if ((int)*(b + i) > 49 && ((int)*(b + i) != 48 || (int)*(b + i) != 49))
+		if (b[i] < '0' || b[i] > '1')
 		{
 			return (0);
 		}
-		else
+		else if (b[i] == '1')
 		{
-			if (*(b + i - 1) == '1')
-			{
-				number += 1 << (count - i);
-			}
+			number += 1 << (count - i - 1);
 		}
 	}
 	return (number);
