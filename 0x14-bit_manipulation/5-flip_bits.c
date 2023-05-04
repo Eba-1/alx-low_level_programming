@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int mask = n ^ m, counter = 0;
 
-	while (mask > 0)
+	while (mask)
 	{
 		counter++;
 		mask &= (mask - 1);
