@@ -10,21 +10,21 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-        int check;
+	int check;
 
-        if (!filename)
-                return (-1);
-        check = open(filename, O_RDWR | O_APPEND);
+	if (!filename)
+		return (-1);
+	check = open(filename, O_RDWR | O_APPEND);
 	if (check == -1)
-                return (-1);
-        if (text_content)
-        {
-                if (write(check, text_content, strlen(text_content)) == -1)
-                {
-                        close(check);
-                        return (-1);
-                }
-        }
-        close(check);
-        return (1);
+		return (-1);
+	if (text_content)
+	{
+		if (write(check, text_content, strlen(text_content)) == -1)
+		{
+			close(check);
+			return (-1);
+		}
+	}
+	close(check);
+	return (1);
 }
