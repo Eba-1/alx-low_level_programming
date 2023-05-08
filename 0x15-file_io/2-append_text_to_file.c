@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * append_text_to_file - Function appends text at the end of a file.
@@ -12,8 +13,8 @@ int append_text_to_file(const char *filename, char *text_content)
         int check;
 
         if (!filename)
-                return (1);
-        check = open(filename, O_WRONLY | O_APPEND);
+                return (-1);
+        check = open(filename, O_RDWR | O_APPEND);
 	if (check == -1)
                 return (-1);
         if (text_content)
