@@ -1,5 +1,14 @@
 #include "main.h"
 
+void custom_close(int file)
+{
+	if (close(file) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd  %d\n", file);
+		exit(100);
+	}
+}
+
 /**
  * main - Entry point.
  * @argc: Parameter (the number of arguments).
@@ -45,15 +54,7 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 	}
-	if (close(src) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd  %d\n", src);
-		exit(100);
-	}
-	if (close(dest) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd  %d\n", dest);
-		exit(100);
-	}
+	custom_close(src);
+	custom_close(dest);
 	return (0);
 }
