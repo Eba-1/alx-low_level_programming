@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	int src, dest;
+	int src, dest, letter, letter_w;
 	char str[1024];
 
 	if (argc != 3)
