@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * custom_close - Function that closes file to avoid redundancy.
+ * @file: Parameter (the file descriptor).
+ * Return: void.
+ */
+
 void custom_close(int file)
 {
 	if (close(file) == -1)
