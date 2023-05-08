@@ -45,14 +45,8 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while (letter == 1024)
+	while ((letter = read(src, str, 1024)) > 0)
 	{
-		letter = read(src, str, 1024);
-		if (letter == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
 		letter_w = write(dest, str, letter);
 		if (letter_w == -1)
 		{
